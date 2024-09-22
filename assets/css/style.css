@@ -127,7 +127,9 @@ body {
   border-radius: 5px;
   padding: 2rem;
   margin: 1rem;
-  width: 18%;
+  width: 12%;
+  height: 348px;
+
 }
 
 .card img {
