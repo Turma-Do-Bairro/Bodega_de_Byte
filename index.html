@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/radio.css">
   <link href="https://unpkg.com/nes.icons@latest/css/nes-icons.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,26 +93,48 @@
     </div>
   </section>
 
-  <!-- Sobre -->
   <div class="about-container">
     <section class="about">
       <h2>Sobre o Projeto</h2>
       <p>
-        Nosso objetivo é descomplicar o universo da TI, trazendo informações acessíveis, atualizadas e relevantes para profissionais, estudantes e entusiastas. Seja você um desenvolvedor, analista de sistemas, especialista em segurança, ou apenas alguém interessado no que há de mais novo no mundo tecnológico, estamos aqui para ajudá-lo a navegar por esse universo.
+        Nosso objetivo é descomplicar o universo da TI, trazendo informações acessíveis, atualizadas e relevantes para
+        profissionais, estudantes e entusiastas. Seja você um desenvolvedor, analista de sistemas, especialista em
+        segurança, ou apenas alguém interessado no que há de mais novo no mundo tecnológico, estamos aqui para ajudá-lo
+        a navegar por esse universo.
       </p>
     </section>
     <section class="about-image">
       <img src="./assets/img/peach-goma-pc-night-keyboard-smashing.gif" alt="Imagem sobre o projeto">
     </section>
   </div>
+  <div id="radioModal" class="modal floating-modal">
+    <div class="modal-content">
+      <div id="customPlayer">
+        <div class="track">
+          <span id="trackTitle">Track Title</span>
+        </div>
+        <div class="buttons-track">
+          <button  class="nes-icon size-2x caret-left" id="prevBtn"></button>
+          <button class="nes-icon size-2x play" id="playPauseBtn"></button>
+          <button class="nes-icon size-2x caret-right" id="nextBtn"></button>
+        </div>
+      </div>
 
+      <audio id="audioPlayer"></audio>
 
-  <!-- Rodapé -->
+    </div>
+  </div>
   <footer class="footer">
-    <p>Esse projeto é open-source. <a href="link-do-fork" target="_blank">Faça um Fork!</a></p>
+    <i class="nes-icon size-2x github"></i>
+    </i>
+    <p>Esse projeto é open-source.
+      <a href="link-do-fork" target="_blank">Faça um Fork!</a>
+    </p>
+    <img src="./assets/img/nyan-cat.gif" alt="" width="150px">
   </footer>
 
   <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/radio.js"></script>
 </body>
 
 </html>

@@ -53,24 +53,29 @@ nav{
 .menu-mobile{
   display: none;
 }
-/* Estilos Gerais */
+
 body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "Source Code Pro", monospace;
   background-color: #352F44;
   color: #212529;
   margin: 0;
   padding: 0;
   background-image: url(/assets/img/fe0b06dc860c6ae67c271bb66c7bf9e9.gif);
+  
 }
 
-/* Nome do Site */
+
 .site-name {
   position: relative;
   background-image: url('/assets/img/jeong-yejune-6CUYzFIc7W0-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff; /* Para garantir que o texto seja legível */
+  color: #fff; 
   padding: 21rem 2rem;
   text-align: center;
 }
@@ -82,7 +87,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adiciona uma sobreposição escura para melhorar a legibilidade do texto */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
 }
 
@@ -102,10 +107,11 @@ body {
   z-index: 2;
 }
 
-/* Seção da Equipe */
+
 .team {
   padding: 4rem 6rem;
   text-align: center;
+  color: #E5D9F2;
 }
 
 
@@ -147,7 +153,7 @@ body {
   text-decoration: underline;
 }
 
-/* Sobre o Projeto */
+
 .about-container {
   display: flex;
   align-items: center;
@@ -184,25 +190,35 @@ body {
   color: #6c757d;
 }
 
-/* Rodapé */
 .footer {
   background-color: #2A2438;
   color: #fff;
   padding: 2rem 0;
   text-align: center;
-  margin-top: 2.2rem;
-  
 }
 
 .footer p {
-  margin: 0;
+  margin: 0px;
+  
 }
 
 .footer a {
+  display: flex;
   color: #007bff;
   text-decoration: none;
+  justify-content: center;
 }
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #E5D9F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #411E8F;
+
 }
