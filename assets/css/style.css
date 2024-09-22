@@ -1,0 +1,208 @@
+header{
+  background-color: #2a2438c4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6rem;
+}
+.logo-tipo{
+  display: flex;
+  align-items: center;
+}
+.logo-tipo img{
+  width: 50px;
+  height: 50px;
+}
+.lista{
+  display: flex;
+  align-items: center;
+}
+.lista ul{
+  display: flex;
+  justify-content: center;
+}
+.lista-itens{
+  margin-right: 2rem;
+}
+.lista-link{
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+.login-button button{
+  border: none;
+  background-color: #f8f9fa;
+  color: #24252a;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+.login-button button a{
+  color: #24252a;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Source Code Pro", monospace;
+}
+.mobile-menu-icon{
+  display: none;
+}
+.menu-mobile{
+  display: none;
+}
+/* Estilos Gerais */
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: #352F44;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+  background-image: url(/assets/img/fe0b06dc860c6ae67c271bb66c7bf9e9.gif);
+}
+
+/* Nome do Site */
+.site-name {
+  position: relative;
+  background-image: url('/assets/img/jeong-yejune-6CUYzFIc7W0-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Para garantir que o texto seja legível */
+  padding: 21rem 2rem;
+  text-align: center;
+}
+
+.site-name::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adiciona uma sobreposição escura para melhorar a legibilidade do texto */
+  z-index: 1;
+}
+
+.site-name h2 {
+  font-size: 2.5rem;
+  color: #fcfcfc;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.site-name p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  font-family: "Pixelify Sans", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+/* Seção da Equipe */
+.team {
+  padding: 4rem 6rem;
+  text-align: center;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: #E5D9F2 1px solid;
+  background-color: #E5D9F2;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem;
+  width: 18%;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Sobre o Projeto */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  background-color: #E5D9F2;
+  float: right;
+}
+
+.about {
+  flex: 1;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  float: inline-end;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #2A2438;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 2.2rem;
+  
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
