@@ -8,6 +8,40 @@ nav{
   align-items: center;
   padding: 1.5rem 6rem;
 }
+nav ul {
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+nav ul li {
+  position: relative; 
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  display: inline-block;
+  transition: color 0.3s ease; 
+}
+nav ul li a:hover {
+  color: #5d2e9e; 
+}
+nav ul li a::after {
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height: 2px;
+  background-color: #50327b;
+  transform: scaleX(0); 
+  transform-origin: bottom left;
+  transition: transform 0.3s ease; 
+}
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
 .logo-tipo{
   display: flex;
   align-items: center;
@@ -32,6 +66,7 @@ nav{
   color: #fff;
   font-weight: 400;
 }
+
 .login-button button{
   border: none;
   background-color: #f8f9fa;
@@ -91,20 +126,88 @@ body {
   z-index: 1;
 }
 
-.site-name h2 {
-  font-size: 2.5rem;
-  color: #fcfcfc;
-  position: relative;
-  z-index: 2;
-  
+.site-name h2{
+  font-size: 8rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+
 }
 
-.site-name p {
-  font-size: 1.2rem;
-  color: #6c757d;
+@keyframes typing {
+  0.0000%, 20% { content: ""; }
+  1.1395%, 18.8605% { content: "C"; }
+  2.2791%, 17.7209% { content: "Có"; }
+  3.4186%, 16.5814% { content: "Cód"; }
+  4.5581%, 15.4419% { content: "Códi"; }
+  5.6977%, 14.3023% { content: "Códig"; }
+  6.8372%, 13.1628% { content: "Códigos"; }
+
+  21%, 40% { content: ""; }
+  22.1395%, 38.8605% { content: "S"; }
+  23.2791%, 37.7209% { content: "So"; }
+  24.4186%, 36.5814% { content: "Sol"; }
+  25.5581%, 35.4419% { content: "Solu"; }
+  26.6977%, 34.3023% { content: "Soluç"; }
+  27.8372%, 33.1628% { content: "Soluções"; }
+
+  41%, 60% { content: ""; }
+  42.1395%, 58.8605% { content: "C"; }
+  43.2791%, 57.7209% { content: "Co"; }
+  44.4186%, 56.5814% { content: "Con"; }
+  45.5581%, 55.4419% { content: "Connhe"; }
+  46.6977%, 54.3023% { content: "Conheci"; }
+  47.8372%, 53.1628% { content: "Conhecimento"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
   font-family: "Pixelify Sans", sans-serif;
-  position: relative;
-  z-index: 2;
+  font-size: 100px;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 10s infinite; 
+  color:rgb(215, 157, 248);
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: infinite;
+  }
+
+  @keyframes sequencePopup {
+    0%, 100% { content: "Conhecimento"; }
+    25% { content: "Códigos"; }
+    50% { content: "Soluções"; }
+    75% { content: ""; }
+  }
+
+  .typewriter::before {
+    content: "Conhecimento";
+    animation: sequencePopup 5s linear infinite;
+    
+  }
 }
 
 
