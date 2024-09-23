@@ -1,4 +1,13 @@
-header {
+.logo-tipo {
+  display: flex;
+  align-items: center; /* Alinha verticalmente o logotipo */
+  justify-content: center; /* Centraliza horizontalmente o logotipo */
+}
+
+.logo-tipo .logo-img {
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: auto; /* Mantém a proporção do logotipo */
+}header {
   background-color: #2a2438c4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
