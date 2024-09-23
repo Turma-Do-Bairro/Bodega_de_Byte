@@ -25,10 +25,11 @@
 
   /* Sobre o Projeto */
   .about {
-    padding: 2rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 915px) {
   .menu {
     padding: 1.5rem 4rem;
   }
@@ -74,11 +75,11 @@
 
   /* Nome do Site */
   .site-name h2 {
-    font-size: 5.5rem;
-  }
+    font-size: 3.5rem;
+}
 
   .site-name p {
-    font-size: 5.5rem;
+    font-size: 2.5rem;
   }
 
   /* Seção da Equipe */

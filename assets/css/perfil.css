@@ -1,22 +1,22 @@
-/* Estilos para a seção da equipe */
+
 .team {
   padding: 40px 20px;
 }
 
-/* Container principal dos membros da equipe */
+
 .team-members {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Altera para wrap para permitir quebra de linha */
-  gap: 50px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; 
+  gap: 50px; 
 }
 
-/* Card do membro da equipe */
+
 .card {
   position: relative;
   width: 250px;
   height: 380px;
-  background: #310a5d;
+  background:#310a5dbe;
   box-shadow: 0 15px 18px rgba(179, 179, 179, 0.6);
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
   transition: all 0.4s ease;
 }
 
-/* Foto do perfil */
+
 .profile-pic {
   width: 100px;
   height: 100px;
@@ -36,9 +36,10 @@
   background-size: cover;
   background-position: center;
   transition: transform 0.4s ease;
+  z-index: 10000;
 }
 
-/* Camada de efeito */
+
 .layer {
   position: absolute;
   top: 21%;
@@ -46,29 +47,36 @@
   height: 3px;
   background: #fff;
   transition: height 0.4s ease;
-  z-index: -1;
+  z-index: 1;
 }
 
-/* Detalhes do perfil */
+
 .detail {
   text-align: center;
-  color: #fff;
+  color: #310a5dbe;
   transition: color 0.4s ease;
+  z-index: 100;
 }
 
-/* Ícones de habilidades */
+
 .skills {
   font-size: 1.5rem;
   display: flex;
   gap: 0.3rem;
   opacity: 0;
   transition: opacity 0.4s ease;
+  z-index: 1001;
+  color: #310a5d;
 }
 .skills i {
   transition: transform 0.4s ease;
+
 }
 
-/* Botão de contratação */
+.btn{
+  z-index: 1002;
+}
+
 .btn a {
   display: block;
   width: 200px;
@@ -83,7 +91,7 @@
   text-decoration: none;
 }
 
-/* Efeitos de hover */
+
 .card:hover .layer {
   height: 100%;
 }
@@ -102,19 +110,26 @@
 
 .card:hover .btn a {
   border-color: #310a5d;
-  color: #310a5d;
+  color:#fff;
+  background-color: #310a5d;
+  text-decoration: none;
+  
+}
+.card.scrolled .layer {
+  height: 100%;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .team-members {
-    flex-direction: column; /* Muda os cards para coluna no mobile */
-    align-items: center; /* Centraliza os cards */
-  }
-
-  .card {
-    margin-bottom: 30px; /* Espaçamento entre os cards */
-    width: 80%; /* Ajusta a largura para caber melhor na tela */
-    height: auto; /* Altura automática para permitir adaptação do conteúdo */
-  }
+.card.scrolled .profile-pic {
+  border: 2px solid #ffffff;
 }
+
+.card.scrolled .detail {
+  color: #fff;
+}
+
+.card.scrolled .skills {
+
+  opacity: 1;
+  color: #fff;
+}
+
